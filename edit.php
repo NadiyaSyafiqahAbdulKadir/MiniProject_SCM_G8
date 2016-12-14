@@ -35,6 +35,8 @@ function renderForm($id, $firstname, $lastname, $error)
 <?php
 
 // if there are any errors, display them
+  
+//edit by an nasihah mohd napi
 
 if ($error != '')
 
