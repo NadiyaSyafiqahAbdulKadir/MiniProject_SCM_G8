@@ -4,7 +4,7 @@
 
 <head>
 //dalilah
-<title>View Records</title>
+<title>View Players Records</title>
 
 </head>
 
