@@ -26,7 +26,7 @@ function renderForm($id, $firstname, $lastname, $error)
 
 <head>
 
-<title>Edit Record</title>
+<title>Edit Players Record</title>
 
 </head>
 
