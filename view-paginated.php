@@ -20,11 +20,11 @@ VIEW-PAGINATED.PHP
 
 Displays all data from 'players' table
 
-This is a modified version of view.php that includes pagination
+
 
 */
 
-
+//Created by Wan Mohamad Iqbal
 
 // connect to the database
 
