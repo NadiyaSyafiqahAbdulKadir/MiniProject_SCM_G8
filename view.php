@@ -10,7 +10,7 @@
 
 <body>
 
-
+<p> This section show the record of the players</p>
 
 <?php
 
