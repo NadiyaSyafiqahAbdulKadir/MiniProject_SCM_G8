@@ -8,7 +8,7 @@ Deletes a specific entry from the 'players' table
 
 */
 
-
+//adila edit
 
 // connect to the database
 
