@@ -26,7 +26,7 @@ function renderForm($first, $last, $error)
 
 <head>
 
-<title>New Person Record</title>
+<title>New Players Record</title>
 
 </head>
 
