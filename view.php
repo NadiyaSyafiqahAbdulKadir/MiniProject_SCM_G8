@@ -18,7 +18,7 @@
 
 VIEW.PHP
 
-Displays all data from 'players' table
+Displays all data from 'players' table database
 
 */
 
