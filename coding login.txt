@@ -1,0 +1,52 @@
+<?php 
+    session_start(); 
+?>
+
+<?php
+$error ="";
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    
+   if(!empty($_POST['username']))    
+   {
+      if(!empty($_POST['password']))
+	  {
+            include "connection.php";
+	        // to create a query to be executed in sql
+	        $idnum = $_POST['username'];
+	        $pass = $_POST['password'];
+	        $query = "SELECT * FROM admin WHERE username = '$idnum' AND password = '$pass'";
+	        // to run sql query in database
+	        $result = mysql_query($query) or die(mysql_error());
+	     
+		    //Check whether the query was successful or not
+	        if(isset($result)) 
+			{
+		        if(mysql_num_rows($result) == 1) 
+				{
+			        //Login Successful
+			        $_SESSION['uname'] = $_POST['username'];
+                    header('Location:admin/index.php');
+					exit();
+		        }
+		        else 
+				{
+			        //Login failed
+					$_SESSION['message'] = "Invalid UserName or Password!";
+			        //$error ="Invalid UserName or Password!";
+			    }
+	        }
+	        else 
+		    {
+		        die("Query failed");
+	        }
+	  }
+	  else
+	  {
+	       $error ="Please input Password!";
+	  }
+   }
+   else
+      $error ="Please input username!";
+}
+?>
