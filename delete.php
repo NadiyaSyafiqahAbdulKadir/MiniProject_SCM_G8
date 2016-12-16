@@ -5,7 +5,7 @@
 DELETE.PHP
 
 Deletes a specific entry from the 'players' table
-
+codinggg
 */
 
 
